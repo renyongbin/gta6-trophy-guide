@@ -14,6 +14,9 @@
 // Outside the grader's container, MAKEFUN_OUTPUT_DIR stands in for /output:
 //   mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 
+// Built 2026-11-20: a full guide for all 55 trophies — every guide in our own words with its
+// source cited beside it, a three-step platinum roadmap, kind filters, a spoiler-free mode and
+// localStorage progress with export/import. Screenshots are real renders of app/ in headless Chrome.
 import { cpSync, existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
