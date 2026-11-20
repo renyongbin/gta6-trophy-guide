@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI (PS5)</title>
+<meta name="description" content="An offline guide and tracker for all 55 PlayStation 5 trophies of Grand Theft Auto VI: every guide in our own words with its source, a platinum roadmap, and a missable-trophy warning.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="hero-text">
+    <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; Offline guide</p>
+    <h1>Leonida Trophy Guide</h1>
+    <p class="sub">All 55 trophies — 1 platinum, 2 gold, 6 silver, 46 bronze — each with a guide in our own words and the source it came from. No online trophies. About 200 hours to platinum. One trophy may be missable.</p>
+  </div>
+  <div class="progress-card" id="progressCard">
+    <p class="big"><span id="earnedCount">0</span><span class="of"> / 55 earned</span></p>
+    <div class="bar" role="progressbar" aria-label="Trophies earned" aria-valuemin="0" aria-valuemax="55" aria-valuenow="0" id="progressBar"><div class="fill" id="progressFill"></div></div>
+    <p class="grades" id="gradeCounts">Platinum 0/1 &middot; Gold 0/2 &middot; Silver 0/6 &middot; Bronze 0/46</p>
+    <p class="platinum-note" id="platinumNote">Earn the other 54 to unlock the platinum, Vice Got a Price!</p>
+  </div>
+</header>
+
+<nav class="controls" aria-label="Tracker controls">
+  <div class="filters" id="kindFilters" role="group" aria-label="Filter by kind">
+    <button type="button" data-kind="all" class="active">All 55</button>
+    <button type="button" data-kind="story">Story</button>
+    <button type="button" data-kind="missable">Missable</button>
+    <button type="button" data-kind="collectibles">Collectibles</button>
+    <button type="button" data-kind="activities">Activities</button>
+    <button type="button" data-kind="online">Online</button>
+  </div>
+  <div class="tools">
+    <label class="search">Search <input id="search" type="search" placeholder="Trophy, mission or place…" autocomplete="off"></label>
+    <label>Grade
+      <select id="gradeFilter">
+        <option value="all">All grades</option>
+        <option value="platinum">Platinum</option>
+        <option value="gold">Gold</option>
+        <option value="silver">Silver</option>
+        <option value="bronze">Bronze</option>
+      </select>
+    </label>
+    <label class="check"><input id="spoilerToggle" type="checkbox"> Spoiler-free mode</label>
+    <label class="check"><input id="earnedOnly" type="checkbox"> Earned only</label>
+    <button id="exportBtn" type="button">Export progress</button>
+    <label class="import-btn">Import progress <input id="importFile" type="file" accept="application/json,.json"></label>
+    <button id="resetBtn" type="button" class="quiet">Reset</button>
+  </div>
+  <p class="hint" id="filterHint"></p>
+</nav>
+
+<main>
+  <p class="list-head"><span id="listCount"></span> <span class="sources-note">Every guide below names its source beside it. Trophy names and descriptions are PlayStation's official text; the guides are our own words.</span></p>
+  <div class="trophy-list" id="trophyList"></div>
+  <p class="empty" id="emptyState" hidden>No trophies match these filters. Try another kind or clear the search.</p>
+</main>
+
+<section class="roadmap" id="roadmap" aria-label="Platinum roadmap">
+  <h2>Road to the platinum — about 200 hours</h2>
+  <p class="roadmap-intro">Built from the official trophy descriptions: story first, then the 100% checklist, then cleanup. There is no mission replay, so keep a manual save at the start of each chapter. Cheats disable trophies and saving (PowerPyx).</p>
+  <ol class="steps" id="roadmapSteps"></ol>
+  <div class="missable-box" id="missableBox">
+    <h3>&#9888; The one trophy that may be missable</h3>
+    <p><strong>Positive Mental Attitude</strong> (bronze) — meditate at every spot across Leonida. In Chapter 1, the morning after the mission Down to Earth, talk to Lucia in the kitchen at Jason's house, follow her to the balcony and choose Accept. That session is gone after Chapter 1, and it is still unconfirmed whether it counts toward the trophy — do it to be safe. Every other trophy can be earned in free-roam after the story. Source: PowerPyx, All Meditation Spot Locations.</p>
+  </div>
+</section>
+
+<footer>
+  <p>Guide text is written for this page in our own words. Sources are cited beside each trophy: PowerPyx's GTA 6 Trophy Guide &amp; Roadmap and its Meditation Spot Locations guide, with the official trophy list as published on PlayStation (Exophase / PSNProfiles). This is an unofficial fan guide — it uses no Rockstar Games logo, artwork or game screenshots. Works fully offline; progress is stored only in your browser.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
